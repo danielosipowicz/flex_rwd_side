@@ -1,0 +1,150 @@
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+#main-menu{
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+#main-menu li{
+  flex-grow: 1;
+}
+
+#main-menu li a{
+  color: white;
+}
+
+#main-logo{
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+#main-nav{
+  background-color: steelblue;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+#main-heder{
+  text-align: center;
+  background-image: url(owl.png);
+  background-size: cover;
+  background-position: center;
+  padding:90px 20px;
+}
+
+#main-heder h1{
+
+  margin: 0;
+
+}
+
+#main-content{
+  padding: 20px;
+}
+
+#main-content a {
+  color: steelblue;
+  }
+
+#main-content article {
+  margin-bottom: 60px;
+}
+
+#main-sidebar{
+  background-color: #464363;
+  padding: 20px;
+}
+
+#main-sidebar h2 {
+  color: silver;
+  text-align: center;
+  margin: 0 0 20px 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid silver;
+}
+
+#main-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#main-sidebar ul li   {
+  clear: both;
+}
+
+#main-sidebar ul li a  {
+  color: black;
+
+}
+
+#main-sidebar ul li a img {
+  float:left;
+  margin: 0 10px 5px 0;
+}
+
+#main-sidebar p {
+  color: #321432;
+}
+
+
+@media (min-width:760px){
+
+    #main-nav{
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+    }
+
+    #main-menu{
+    margin: 0;
+    }
+
+    #main-menu li {
+      margin-left: 20px;
+    }
+
+    #main-menu li a:hover {
+      text-decoration: underline;
+
+    }
+
+    #main-heder{
+      padding: 190px 20px;
+    }
+
+    #main-heder h1 {
+      font-size: 60px;
+    }
+
+    #main-section{
+    display: flex;
+    }
+
+    #main-content {
+      width: 70%;
+    }
+
+  #main-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+}
