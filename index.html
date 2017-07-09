@@ -9,6 +9,35 @@
     <title></title>
 
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+
+    <script type="text/javascript">
+
+function add0(li){
+  if (li<10) {
+     li="0"+li;
+   }
+   return li;
+}
+
+function counting(){
+    var tooday = new Date();
+
+    var day = tooday.getDate();
+    var month = tooday.getMonth()+1;
+    var year = tooday.getFullYear();
+
+    var hour = tooday.getHours();
+    var minute = tooday.getMinutes();
+    var second = tooday.getSeconds();
+
+    document.getElementById("timer-javascript").innerHTML = add0(day)+"/"+add0(month)+"/"+year+" | "+add0(hour)+":"+add0(minute)+":"+add0(second);
+
+    setTimeout("counting()",1000);
+
+}
+    </script>
+
   </head>
 
 <body>
@@ -20,6 +49,13 @@
     <a id="main-logo" href="index.html">
       Klick!!
     </a>
+
+  <div id="timer-javascript"></div>
+
+    <script type="text/javascript">
+      counting();
+// document.getElementById("timer-javascript").innerHTML = add0();
+    </script>
 
 
       <ul id="main-menu">
@@ -33,7 +69,7 @@
       </nav>
 
       <header id="main-heder">
-      <h1>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h1>
+      <h1>  Nobody exists on purpose. Nobody belongs anywhere. We're all going to die. </h1>
       </header>
 
       <main id="main-section">
